@@ -28,7 +28,9 @@ This was applied to all key metrics (Points, Rebounds, Assists, etc.) and the **
 
 The final predictive variables ($X$) were generated as the **difference** between the Home Team's cumulative average and the Away Team's cumulative average. This forces the model to learn the relative strength of the matchup.
 
-* **Example Feature:** $\text{WINS DIFF} = \text{AVG WINS}_{\text{Home}} - \text{AVG WINS}_{\text{Away}}$ *
+$$
+\text{WINS DIFF} = \text{AVG WINS}_{\text{Home}} - \text{AVG WINS}_{\text{Away}}
+$$
   
 #### 3. Model & Validation
 
@@ -61,6 +63,7 @@ The model's performance is further illustrated by the ROC curve:
 ![c](plots/plot1.png)
 
 ![b](plots/plot2.png)
+
 
 
 
