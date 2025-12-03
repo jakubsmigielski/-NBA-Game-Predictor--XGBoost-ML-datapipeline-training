@@ -62,9 +62,10 @@ The **WINS\_DIFF** (difference in cumulative winning percentage) was the most de
 
 The model's performance is further illustrated by the ROC curve:
 
-![c](plots/plot1.png)
+![c](plot/plot1.png)
 
-![b](plots/plot2.png)
+![b](plot/plot2.png)
+
 
 
 
