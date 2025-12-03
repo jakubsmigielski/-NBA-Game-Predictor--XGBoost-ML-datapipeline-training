@@ -10,6 +10,8 @@ The main objective was to perform a binary classification (Home Win: 1 / Away Wi
 
 ### 🛠️ Methodology and Feature Engineering
 
+RAW data downloaded from Kaagle
+
 The project utilized a robust feature engineering pipeline to handle the temporal nature of sports data.
 
 #### 1. Feature Creation: Cumulative Statistics
@@ -63,6 +65,7 @@ The model's performance is further illustrated by the ROC curve:
 ![c](plots/plot1.png)
 
 ![b](plots/plot2.png)
+
 
 
 
