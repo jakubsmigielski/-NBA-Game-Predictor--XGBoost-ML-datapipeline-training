@@ -19,7 +19,7 @@ To ensure the model only learns from past events and prevent **data leakage**, f
 The **Average Points Before Game $k$** was calculated as:
 
 $$
-\text{AVG\_PTS}_{k} = \frac{\sum_{i=1}^{k-1} \text{PTS}_{i}}{k-1}
+\text{AVG PTS}_{k} = \frac{\sum_{i=1}^{k-1} \text{PTS}_{i}}{k-1}
 $$
 
 This was applied to all key metrics (Points, Rebounds, Assists, etc.) and the **Win Percentage** (`WINS`).
@@ -28,7 +28,9 @@ This was applied to all key metrics (Points, Rebounds, Assists, etc.) and the **
 
 The final predictive variables ($X$) were generated as the **difference** between the Home Team's cumulative average and the Away Team's cumulative average. This forces the model to learn the relative strength of the matchup.
 
-* **Example Feature:** $\text{WINS\_DIFF} = \text{AVG\_WINS}_{\text{Home}} - \text{AVG\_WINS}_{\text{Away}}$
+$$
+\text{AVG-PTS}_{k} = \frac{\sum_{i=1}^{k-1} \text{PTS}_{i}}{k-1}
+$$
 
 #### 3. Model & Validation
 
@@ -61,4 +63,5 @@ The model's performance is further illustrated by the ROC curve:
 ![c](plots/plot1.png)
 
 ![b](plots/plot2.png)
+
 
